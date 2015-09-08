@@ -1,0 +1,75 @@
+
+<aside class="sidebar" >
+	<div class="closebtn"><i  class="fa fa-close fa-lg contentsizeicon"></i>	</div>
+	<div class="avatrbox">
+		<div class="avatrwrapper">
+			<a class="avatar" >
+				<img src="/blog/images/road-avatar2.png"  />
+			</a>
+		</div>
+	</div>
+	<nav id="article-category">
+		
+		
+		<ul>
+			<li id="allstyle" class="category">
+				所有文章
+				<div class="post-list">
+					{% for post in site.posts %}
+					  <a class="allstyle {{ post.category }} " href="/blog{{ post.url }}">
+						  <span style="border:5px solid white;border-radius:5px;display:inline-block;height:0px;width:0px;"></span>
+						  <span>{{ post.title }}</span>
+						  <span style="float: right">{{ post.date | date: "%b %Y" }}</span>
+					  </a>
+					{% endfor %}
+				</div>
+			</li>
+			<li id="1" class="category">
+				技术
+				<div class="post-list">
+					{% for post in site.posts %}
+					  <a class="allstyle {{ post.category }} " href="/blog{{ post.url }}">
+						  <span style="border:5px solid white;border-radius:5px;display:inline-block;height:0px;width:0px;"></span>
+						  <span>{{ post.title }}</span>
+						  <span style="float: right">{{ post.date | date: "%b %Y" }}</span>
+					  </a>
+					{% endfor %}
+				</div>
+			</li>
+			
+			<li id="3" class="category">
+				问题
+				<div class="post-list">
+					{% for post in site.posts %}
+					  <a class="allstyle {{ post.category }} " href="/blog{{ post.url }}">
+						  <span style="border:5px solid white;border-radius:5px;display:inline-block;height:0px;width:0px;"></span>
+						  <span>{{ post.title }}</span>
+						  <span style="float: right">{{ post.date | date: "%b %Y" }}</span>
+					  </a>
+					{% endfor %}
+				</div>
+			</li>
+			<li id="4" class="category">
+				生活
+				<div class="post-list">
+					{% for post in site.posts %}
+					  <a class="allstyle {{ post.category }} " href="/blog{{ post.url }}">
+						  <span style="border:5px solid white;border-radius:5px;display:inline-block;height:0px;width:0px;"></span>
+						  <span>{{ post.title }}</span>
+						  <span style="float: right">{{ post.date | date: "%b %Y" }}</span>
+					  </a>
+					{% endfor %}
+				</div>
+			</li>			
+		</ul>
+	</nav>
+	<!-- <nav class="post-list">
+		{% for post in site.posts %}
+		  <a class="allstyle {{ post.category }} " href="/blog{{ post.url }}">
+			  <span style="border:5px solid white;border-radius:5px;display:inline-block;height:0px;width:0px;"></span>
+			  <span>{{ post.title }}</span>
+			  <span style="float: right">{{ post.date | date: "%b %Y" }}</span>
+		  </a>
+		{% endfor %}
+	</nav> -->
+</aside>
